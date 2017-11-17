@@ -5,6 +5,7 @@ import {
     Image,
     TouchableWithoutFeedback
 } from 'react-native';
+import FastImage from 'react-native-fast-image';
 
 export default class PhotoView extends Component {
     render() {
@@ -18,7 +19,7 @@ export default class PhotoView extends Component {
                 <TouchableWithoutFeedback
                     onPress={this.props.onTap ? this.props.onTap : function() {}}>
 
-                    <Image {...this.props}/>
+                    <FastImage {...this.props}/>
 
                 </TouchableWithoutFeedback>
 
